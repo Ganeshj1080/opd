@@ -16,7 +16,7 @@ import {
 
 export class DashboardComponent {
   single: any[];
-  animations: [  ]
+  animations: any[] = []
   graph: {
     links: any[],
     nodes: any[]
