@@ -1,0 +1,3 @@
+.searchForm {display: block;}
+.searchForm form input {border: 0;border-radius: 20px;padding: 5px 15px;}
+.searchForm form input:focus {outline: transparent;}

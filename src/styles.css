@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+@import "assets/fonts/fonts/stylesheet.css";
+@import "assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css";
+
+
+
+
+.openSans {font-family: 'OpenSans'}
+.openSansSemiBd {font-family: 'OpenSans-Semibold';}
+.OpenSansBold {font-family: 'OpenSans-Bold';}
+.GillSansBold {font-family: 'GillSans-Bold';}
+.GillSans {font-family: 'GillSans';}
+.GillSansLight {font-family: 'GillSans-Light';}
+.GillSansSemiBold {font-family: 'GillSans-SemiBold';}
+.AvenirBook {font-family: 'Avenir-Book';}
+
+
+
+.fs-18 {font-size: 18px;}
+
+body {font-family: 'OpenSans' !important;}
+.profileSection {margin: 0 0 8px;}
+.profileSection ul {list-style: none;margin: 0;padding: 0;}
+.profileSection > ul > li > a {display: block;font-family: 'GillSans-SemiBold';font-size: 12px;color: #fff;} 
+.profileSection ul li a:after {display: block;content: '';border: 0;}
+.profileSection ul > li a > figure {display: block;height: 44px;width: 44px;line-height: 44px;text-align: center;margin: 0 5px 0 0;float: left;}
+.profileSection ul > li > a figure img {max-width: 100%;max-height: 100%;width: auto !important;}
+.profileSection ul > li > a span {display: block;float: left;margin: 14px 0 0 3px;}
+.profileSection ul li .dropdown-item.active, 
+.profileSection ul li .dropdown-item:active {background: #4ce4ff;}
+
+.searchForm {display: block;}
+.searchForm form input {border: 0;border-radius: 20px;padding: 5px 15px;}
+.searchForm form input:focus {outline: transparent;} 
+/* .main-content {background: #fff;} */
+.scheduleandAddNew a {display: block;width: 49%;float: right}
+.scheduleandAddNew a span:first-child {height: 40px;width: 40px;display: block;text-align: center;line-height: 40px;font-family: 'GillSans';font-size: 36px;margin: 0 10px 0 0;}
+.scheduleandAddNew a span {font-family: 'OpenSans';font-size: 11px;color: #333;float: left;width: 50%;}
+.scheduleandAddNew a:before {display: block;content: '';clear: both;}
+.appointment span:first-child {background: #999;color: #fff;}
+.patient span:first-child {background: #ff8400;color: #fff;}
+.appointments {border: 1px solid #959595;width: 100%;}
+.appointments ul {list-style: none;margin: 0;padding: 0;}
+.appointments ul.head {background: #d3d3d3;padding: 13px 0;}
+.appointments ul.head li {font-size: 16px;text-transform: none;border: 0;}
+.appointments > ul > li {display: block;width: 100%;}
+.appointments ul:after,
+.appointments > ul > li > ul:after,
+.appointments > ul > li:after {display: block;content: '';clear: both;}
+.appointments ul li.morningSession-outer ul:first-child li {width: 100%;padding: 12px 18px;background: #ebebeb;border-top: 1px solid #acacac;}
+.appointments ul li.morningSession-outer ul:first-child li a {color: #333;font-size: 12px;}
+.appointments ul li ul li {float: left;font-family: 'OpenSans-Semibold';font-size: 14px;color: #333;text-transform: none;}
+
+.appointments ul li ul li:first-child {width: 12%;}
+.appointments ul li ul li:nth-child(2) {width: 35%;}
+.appointments ul li ul li:nth-child(3) {width: 20%;}
+.appointments ul li ul li:nth-child(4) {width: 20%;}
+.appointments ul li ul li:last-child {width: 13%;}
+ul.morningSessionDetails li:first-child {width: 12% !important;}
+ul.morningSessionDetails li:nth-child(2) {width: 35% !important;}
+ul.morningSessionDetails li:nth-child(3) {width: 20% !important;} 
+ul.morningSessionDetails li:nth-child(4) {width: 20% !important;}
+ul.morningSessionDetails li:last-child {width: 13% !important;} 
+
+.appointments ul.head li:first-child,
+.appointments ul li.morningSession-outer ul.morningSessionDetails li:first-child {padding-left: 18px;} 
+.appointments ul.head li:last-child,
+.appointments ul li.morningSession-outer ul.morningSessionDetails li:last-child {padding-right: 18px;} 
+.appointments ul li.morningSession-outer ul.morningSessionDetails li:last-child {text-align: center}
+.appointments ul li.morningSession-outer ul.morningSessionDetails > li {padding: 13px 0;border-bottom: 1px solid #acacac;} 
+.appointments ul li ul li span.active {height: 21px;width: 21px;border: 1px solid #00bd24;border-radius: 100%;display: block;color: #00bd24;font-weight: normal;position: relative;}
+.appointments ul li ul li span.active:after {content: "";background-color: transparent;position: absolute;left: 7px;top: 3px;width: 5px;border-bottom: 2px solid #00bd24;height: 11px;border-right: 2px solid #00bd24;transform: rotate(45deg);-o-transform: rotate(45deg);-ms-transform: rotate(45deg);-webkit-transform: rotate(45deg);}
+.morningSessionDetails-outer > li {width: 100% !important;}
+.morningSessionDetails-outer li ul:first-child li {background: transparent !important;}
+.morningSessionDetails-outer > li,
+.morningSessionDetails-outer li ul:last-child li {border: 0 !important;}
+.appointments ul li ul li span {margin: 0 auto;}
+
+.appointments ul li ul li span.deactive {height: 21px;width: 21px;border: 1px solid #ff0000;border-radius: 100%;display: block;position: relative;}
+.appointments ul li ul li span.deactive:before, .appointments ul li ul li span.deactive:after {position: absolute;left: 9px;content: ' ';height: 13px;width: 1px;background-color: #ff0000;top: 3px;}
+.appointments ul li ul li span.deactive:before {transform: rotate(45deg);}
+.appointments ul li ul li span.deactive:after {transform: rotate(-45deg);}
+.scheduleandAddNew {width: 100%;}
+.appointments.inventory ul li ul li:first-child {width: 85%;}
+.appointments.inventory ul li ul li:nth-child(2) {width: 15%;}
+.inventory ul.morningSessionDetails li:first-child {width: 85% !important;}
+.inventory ul.morningSessionDetails li:nth-child(2) {width: 15% !important;}
+.appointments.inventory ul li.morningSession-outer ul.morningSessionDetails li:last-child {text-align: left;} 
+.appointments.inventory ul li.morningSession-outer ul.morningSessionDetails > li {border-bottom: 1px solid #acacac; background: transparent;}

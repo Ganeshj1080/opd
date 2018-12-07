@@ -1,0 +1,326 @@
+<!-- <div class="row">
+  
+  
+</div> -->
+<div class="row">
+  <div class="col-lg-6">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <div class="card card-body card-widget openSansSemiBd fs-18">
+                Today's Appointments
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <div class="card card-body card-widget scheduleandAddNew-outer">
+                <div class="scheduleandAddNew">
+                  <a href="#" class="patient">
+                      <span>+</span> <span>Add New Patient</span>
+                  </a>
+                  <a href="#" class="appointment">
+                    <span>+</span> <span>Schedule New Appointment</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header no-shadow">
+        <div class="appointments">
+            <ul>
+              <li>
+                <ul class="head">
+                  <li>Time</li>
+                  <li>Name of Patient</li>
+                  <li>Patient ID</li>
+                  <li>Mobile</li>
+                  <li>Stutus</li>
+                </ul>
+              </li>
+              <li class="morningSession-outer">
+                <ul>
+                  <li>
+                    <div>
+                      <a href="#" (click)="toggleMsession()" class="morningSession">Morning Session (9.00 am to 12.00 pm)</a>
+                    </div>                    
+                  </li>
+                </ul>
+                <ul *ngIf="show_dialog" class="morningSessionDetails-outer">
+                  <li>
+                    <ul class="morningSessionDetails">
+                      <li>9.00</li>
+                      <li>Sachin Pachwadkar</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>9.15</li>
+                      <li>Amisha Narkhede</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>9.30</li>
+                      <li>Sangita Bansode</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="deactive"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>9.45</li>
+                      <li>Martand Bapaye</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>10.00</li>
+                      <li>Rahul Joshi</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>10.15</li>
+                      <li>Rani Mujumdar</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>10.30</li>
+                      <li>Payal Deshmukh</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>10.45</li>
+                      <li>Bina Gupta</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>11.00</li>
+                      <li>Nayana Raghavan</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>11.15</li>
+                      <li>Rosy Pisolkar</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>11.30</li>
+                      <li>Ranganthan V</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>11.45</li>
+                      <li>Issac Mujawar</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>12.00</li>
+                      <li>Bindiya Goswami</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="morningSession-outer">
+                <ul>
+                  <li>
+                    <div>
+                      <a href="#" (click)="toggleEsession()" class="morningSession">Morning Session (5.00 am to 8.00 pm)</a>
+                    </div>                    
+                  </li>
+                </ul>
+                <ul *ngIf="show_dialog" class="morningSessionDetails-outer">
+                  <li>
+                    <ul class="morningSessionDetails">
+                      <li>9.00</li>
+                      <li>Sachin Pachwadkar</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>9.15</li>
+                      <li>Amisha Narkhede</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>9.30</li>
+                      <li>Sangita Bansode</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="deactive"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>9.45</li>
+                      <li>Martand Bapaye</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>10.00</li>
+                      <li>Rahul Joshi</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>10.15</li>
+                      <li>Rani Mujumdar</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>10.30</li>
+                      <li>Payal Deshmukh</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>10.45</li>
+                      <li>Bina Gupta</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>11.00</li>
+                      <li>Nayana Raghavan</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>11.15</li>
+                      <li>Rosy Pisolkar</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>11.30</li>
+                      <li>Ranganthan V</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>11.45</li>
+                      <li>Issac Mujawar</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                    <ul class="morningSessionDetails">
+                      <li>12.00</li>
+                      <li>Bindiya Goswami</li>
+                      <li>RG02344</li>
+                      <li>9544009857</li>
+                      <li><span class="active"></span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>              
+            </ul>
+        </div>
+      </div>            
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="row">
+          <div class="col-sm-6 col-md-6">
+            <div class="card card-body card-widget openSansSemiBd fs-18">
+              Inventory
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="card card-body card-widget scheduleandAddNew-outer">
+              <div class="scheduleandAddNew">
+                <a href="#" class="appointment">
+                  <span>+</span> <span>Add New inventory</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header no-shadow">
+        <div class="appointments inventory">
+          <ul>
+            <li>
+              <ul class="head">
+                <li>Name Of Inventory</li>
+                <li>Qty</li>                
+              </ul>
+            </li>
+            <li class="morningSession-outer">              
+              <ul class="morningSessionDetails">
+                <li>Diphtheria, tetanus & acellular pertussis3</li>
+                <li>3 nos</li>                    
+              </ul>
+              <ul class="morningSessionDetails">
+                <li>Pneumococcal conjugate5</li>
+                <li>3 nos</li>                    
+              </ul>
+              <ul class="morningSessionDetails">
+                <li>Diphtheria, tetanus & acellular pertussis3</li>
+                <li>3 nos</li>                    
+              </ul>
+              <ul class="morningSessionDetails">
+                <li>Pneumococcal conjugate5</li>
+                <li>3 nos</li>                    
+              </ul>
+              <ul class="morningSessionDetails">
+                <li>Diphtheria, tetanus & acellular pertussis3</li>
+                <li>3 nos</li>                    
+              </ul>
+              <ul class="morningSessionDetails">
+                <li>Pneumococcal conjugate5</li>
+                <li>3 nos</li>                    
+              </ul>
+              <ul class="morningSessionDetails">
+                <li>Diphtheria, tetanus & acellular pertussis3</li>
+                <li>3 nos</li>                    
+              </ul>
+              <ul class="morningSessionDetails">
+                <li>Pneumococcal conjugate5</li>
+                <li>3 nos</li>                    
+              </ul>
+            </li>              
+          </ul>
+        </div>
+      </div>      
+    </div>
+  </div>
+</div>
